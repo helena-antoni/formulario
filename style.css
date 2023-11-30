@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #BFD7E4;
+}
+
+.app{ 
+    margin:0 auto ;
+
+    padding: 107px 0px;
+    font-family: 'Poppins', sans-serif; 
+     
+    width: 1440px;
+ 
+}
+
+body::before{
+    content: '';
+    width: 100%; 
+    height: 465px;
+
+    background-color: #293241;
+    
+    position:absolute; 
+    top:0;
+    left: 0;
+    z-index: -1;
+} 
+
+h1, button, legend{
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px; 
+}
+
+header{
+    width: 750px;
+    margin: auto; 
+    padding-bottom: 32px; 
+     
+    color:#fff;
+    text-align: center;
+}
+
+header h1{ 
+    font-size: 36px;
+ }
+header img{ 
+    padding-top: 21px;  
+}
+
+p{ 
+    font-size: 16px; 
+    font-weight: 400; 
+}
+
+form{
+    margin: auto;  
+    width: 750px;    
+    background-color: #fafafc;
+    border-radius: 20px 20px 0px 0px;
+
+
+} 
+form > legend:nth-child(1){   
+    background: #F67669;
+    
+    border-radius: 20px 20px 0px 0px;
+    height: 129px;
+
+    color: #fff;
+    text-align: center; 
+
+    padding: 50px 0px;
+    
+}
+
+.fieldset-wrapper{ 
+    display: flex; 
+    flex-direction: column;
+    gap: 24px; 
+
+}
+fieldset legend{
+    border-bottom:1px solid #e6e6f0;
+    padding: 8px;
+
+}
+fieldset{ 
+    padding: 31.66px 64px; 
+    border: none; 
+}
+
+.input-wrapper{ 
+    display: grid;
+} 
+
+form label{
+    color: #4E4958; 
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 24px;  
+
+    padding-bottom: 7.93px;
+}
+ 
+form label span{
+    color: #C1BCCC; 
+    font-size: 12px; 
+}
+
+form input, textarea, select, .checkbox-wrapper{
+    width: 300px; 
+    height: 55.5px;
+    font-size: 14px;  
+ 
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    color: #4E4958;
+    
+    padding: 0 24px ;
+    
+}  
+
+form fieldset > .form-name-personal{ 
+    display: flex;   
+    flex-direction: row;
+    gap: 22px; 
+}
+
+form fieldset > .input-wrapper label:nth-child(1){ 
+    padding-top:15.87px;
+}
+
+form fieldset > .input-wrapper input:nth-child(2){ 
+    width: 622px;   
+}
+
+legend{
+    color:#253B51;
+}
+
+textarea{ 
+    min-width: 608px;
+    height: 166.586px;
+    padding: 24px ; 
+
+}
+
+select{ 
+    -webkit-appearance: none; 
+    cursor: pointer; 
+}
+
+form fieldset > .input-wrapper:nth-child(3){  
+    padding-top:15px;
+
+}
+
+.checkbox-wrapper { 
+    position: relative;
+    padding-top: 32px ;
+}
+
+.checkbox-wrapper label{
+    display: flex;
+    margin: 0;
+    gap: 16px;
+    text-align: center;
+}
+
+.checkbox-wrapper input{
+    position: absolute;
+    top:0;
+    left: 0;
+    
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+
+}
+
+.checkbox-wrapper label::before{
+    content: '';
+    width: 24px;
+    height: 24px;
+
+    display: block;
+
+    border:1px solid #e6e6f0;
+    border-radius: 8px; 
+} 
+
+
+.checkbox-wrapper input:checked + label::before{
+    background-image: url(./assets/checked.svg);
+}
+ 
+.checkbox-wrapper input:focus + label::before{
+    
+    outline: 1px solid black;
+}
+
+
+.form-time{  
+    display: flex; 
+    flex-direction: row;
+    gap: 22px;   
+} 
+
+.form-time input{  
+    width: 140px; 
+} 
+
+.form-time #data input{
+    width: 300px;
+}
+input:invalid{
+    border:  1px solid #FF1010; 
+}  
+
+footer{ 
+    margin: auto;  
+    width: 750px;   
+    padding: 31.66px 64px;  
+    background-color: #fafafc;
+     
+}
+
+.app footer button{
+    display: flex;
+    width: 100%; 
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    background: #F67669;
+    color : #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
